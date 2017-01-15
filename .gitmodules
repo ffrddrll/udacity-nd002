@@ -1,0 +1,3 @@
+[submodule "P2/baseballdatabank"]
+	path = P2/baseballdatabank
+	url = https://github.com/chadwickbureau/baseballdatabank.git
