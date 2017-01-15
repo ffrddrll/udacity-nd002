@@ -42,8 +42,8 @@ I need to perform a two-tailed t-test for paired samples to examine if I can rej
 
 | Condition | Sum | Mean | Min | Median | Max | IQR |  SD  |
 | :-------: | --: | ---: | --: | -----: | --: | --: | ---: |
-|   Congruent | 337.227 | 14.051 |  8.63  | 14.3565 | 23.328 | 4.3055  | 3.484 |
-| Incongruent | 528.382 | 22.016 | 15.687 | 21.0175 | 35.255 | 5.33475 | 4.696 |
+|   Congruent | 337.227 | 14.051 |  8.63  | 14.3565 | 23.328 | 4.3055  | 3.559 |
+| Incongruent | 528.382 | 22.016 | 15.687 | 21.0175 | 35.255 | 5.33475 | 4.797 |
 
 #### Question 4
 
@@ -69,7 +69,7 @@ I expect the time from incongruent words condition is significant higher than fr
 
 1. Calculate the sample standard deviation for difference between two conditions. And I got<br>
    s = 4.865
-2. The t-statistic is mean<sub>con - inc</sub> / (s / n ^ 0.5) = -2.992 
+2. The t-statistic is mean<sub>con - inc</sub> / (s / n ^ 0.5) = -8.021
 3. I choose the 95% confidence level for this two-tailed test, the t-critical values are ±2.064
 4. The t-statistics is out of the range between two t-critical values, so I reject the null.
 5. Even if I choose the 99% confidence level, the t-critical values are ±2.797. Reject the null.
