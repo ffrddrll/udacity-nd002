@@ -32,18 +32,25 @@ It can be written as:
 
 *H*<sub>a</sub> : *μ*<sub>con</sub> - *μ*<sub>inc</sub> ≠ 0
 
-Also I don't know the population statistics,
-I need to perform a two-tailed t-test for paired samples to examine if I can reject the null.
+Based on the hypotheses, given dataset, and following reasons:
+
+- I assumed the samples was randomly chosen and hence the sampling distribution is normal distribution.
+- I don't know the population statistics.
+- I want to reject the null when the difference of mean time is significant,
+  no matter it is positive or negative.
+- The experiment test two conditions for each participant.
+
+I need to perform a two-tailed t-test for paired samples to examine the hypotheses.
 
 #### Question 3
 
 > *Report some descriptive statistics regarding this dataset.
 > Include at least one measure of central tendency and at least one measure of variability.*
 
-| Condition | Sum | Mean | Min | Median | Max | IQR |  SD  |
-| :-------: | --: | ---: | --: | -----: | --: | --: | ---: |
-|   Congruent | 337.227 | 14.051 |  8.63  | 14.3565 | 23.328 | 4.3055  | 3.559 |
-| Incongruent | 528.382 | 22.016 | 15.687 | 21.0175 | 35.255 | 5.33475 | 4.797 |
+| Condition | Sum | Mean | Min | Median | Max | IQR |  SD  | SSD |
+| :-------: | --: | ---: | --: | -----: | --: | --: | ---: | --: |
+|   Congruent | 337.227 | 14.051 |  8.63  | 14.3565 | 23.328 | 4.3055  | 3.484 | 3.559 |
+| Incongruent | 528.382 | 22.016 | 15.687 | 21.0175 | 35.255 | 5.33475 | 4.696 | 4.797 |
 
 #### Question 4
 
@@ -69,10 +76,12 @@ I expect the time from incongruent words condition is significant higher than fr
 
 1. Calculate the sample standard deviation for difference between two conditions. And I got<br>
    s = 4.865
-2. The t-statistic is mean<sub>con - inc</sub> / (s / n ^ 0.5) = -8.021
-3. I choose the 95% confidence level for this two-tailed test, the t-critical values are ±2.064
-4. The t-statistics is out of the range between two t-critical values, so I reject the null.
-5. Even if I choose the 99% confidence level, the t-critical values are ±2.797. Reject the null.
+1. The t-statistic is mean<sub>con - inc</sub> / (s / n ^ 0.5) = -8.021.
+1. The degrees of freedom for this test equals to<br>
+   n - 1 = 23.
+1. I choose the 95% confidence level for this two-tailed test, the t-critical values are ±2.069.
+1. The t-statistics is out of the range between two t-critical values, so I reject the null.
+1. Even if I choose the 99% confidence level, the t-critical values are ±2.807. Reject the null.
 
 The result of t-test shows the difference is significant, and the t-statistic has a negative value.
 So I can confirmed my expectation, incongruent words condition takes participants more time to name the color.
